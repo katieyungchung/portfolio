@@ -6,9 +6,17 @@ import React, { useState, useEffect } from 'react';
 Includes home, explore, filter, search, and login/signup buttons */
 export const Navbar = () => {
     return (
+     
         <div className="navbar">
-            <NavLink to="/" end activeClassName="active-link" className="nav-link">Home</NavLink>
+            <div className="top-left-name"><h1>Katie Chung</h1></div>
+            <div className="navlinks">
+                <NavLink to="/" end activeClassName="active-link" className="nav-link">About</NavLink>
+                <NavLink to="/" end activeClassName="active-link" className="nav-link">Projects</NavLink>
+                <NavLink to="/" end activeClassName="active-link" className="nav-link">Experience</NavLink>
+                <NavLink to="/" end activeClassName="active-link" className="nav-link">Resume</NavLink>
+            </div>
         </div>
+
     )
 }
 

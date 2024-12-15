@@ -1,0 +1,18 @@
+.home-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-animation {
+    width: 100vw;
+}
+
+.home-bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 400px;
+    /* background-color: grey; */
+}
