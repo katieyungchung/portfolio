@@ -23,3 +23,39 @@
     /* padding-right: 100px; */
     /* background-color: grey; */
 }
+
+.home-projects {
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+}
+
+.home-project-img {
+    width: 40vw;
+    height: 20vw;
+    background-color: grey;
+}
+
+.home-project-description {
+    width: 40vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    text-align: left;
+}
+
+.home-project-description h1 {
+    margin: 0;
+    margin-left: 20px;
+}
+
+.home-project-description p {
+    margin: 0;
+    margin-left: 20px;
+}
+
+.home-projects-h1 {
+    margin: 100px;
+}

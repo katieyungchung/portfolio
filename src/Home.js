@@ -21,11 +21,33 @@ const Home = () => {
                 <source src={HomeAnimation} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
-
-            {/* <div className="home-bio">
-                <h1>Hi, I'm Katie! I'm a 2nd year Computer Science and Engineering student <br></br> with a passion for interdisciplinary art and technology.</h1>
-            </div> */}
             
+            </div>
+
+            <h1 className="home-projects-h1">Projects</h1>
+            <div className="home-projects">
+                <div className="home-project-img"></div>
+                <div className="home-project-description">
+                    <h1>NomNoms</h1>
+                    <p>Description</p>
+                    <div className="home-tags"></div>
+                </div>
+            </div>
+            <div className="home-projects">
+                <div className="home-project-description">
+                    <h1>SignBridge</h1>
+                    <p>Description</p>
+                    <div className="home-tags"></div>
+                </div>
+                <div className="home-project-img"></div>
+            </div>
+            <div className="home-projects">
+                <div className="home-project-img"></div>
+                <div className="home-project-description">
+                    <h1>Candiid</h1>
+                    <p>Description</p>
+                    <div className="home-tags"></div>
+                </div>
             </div>
         </>
     );
