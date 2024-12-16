@@ -10,10 +10,10 @@ export const Navbar = () => {
         <div className="navbar">
             <div className="top-left-name"><h1>Katie Chung</h1></div>
             <div className="navlinks">
-                <NavLink to="/" end activeClassName="active-link" className="nav-link">About</NavLink>
-                <NavLink to="/" end activeClassName="active-link" className="nav-link">Projects</NavLink>
-                <NavLink to="/" end activeClassName="active-link" className="nav-link">Experience</NavLink>
-                <NavLink to="/" end activeClassName="active-link" className="nav-link">Resume</NavLink>
+                <NavLink to="/" end activeClassName="active-link" className="nav-link">ABOUT</NavLink>
+                <NavLink to="/" end activeClassName="active-link" className="nav-link">PROJECTS</NavLink>
+                <NavLink to="/" end activeClassName="active-link" className="nav-link">EXPERIENCE</NavLink>
+                <NavLink to="/" end activeClassName="active-link" className="nav-link">RESUME</NavLink>
             </div>
         </div>
 

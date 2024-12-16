@@ -1,11 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap');
 
+@font-face {
+  font-family: 'Mirage'; 
+  src: url('./assets/MADE\ Mirage\ Bold\ PERSONAL\ USE.otf') format('opentype'); 
+}
+
+@font-face {
+  font-family: 'Menlo'; 
+  src: url('./assets/Menlo-Regular.ttf') format('truetype'); 
+}
+
 h1,
 h2,
 h3 {
   color: black;
-  font-family: 'Jost', sans-serif;
+  font-family: 'Mirage', sans-serif;
   font-weight: var(--font-medium);
+}
+
+p {
+  font-family: 'Menlo';
 }
 
 .App {
