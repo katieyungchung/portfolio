@@ -11,9 +11,9 @@ const About = () => {
             <div className="about-text">
                 <p>Hi I’m Katie (she/her)! I’m a 2nd year Computer Science and Engineering student at UCLA. I’m passionate about the intersection between art and technology, namely human-computer interaction, computer graphics & animation, and UI/UX Design. 
                     <br></br><br></br>
-                    I’m also passionate about ethics and making tech more accessible for everyone. I’m a student organizer for QWER Hacks, a hackathon that empowers the LGBTQIA+ community. 
+                    I’m also passionate about ethics and making tech more accessible for everyone. I’m a student organizer for <a href="https://www.qwerhacks.com/" target="_blank">QWER Hacks</a>, a hackathon that empowers the LGBTQIA+ community. 
                     <br></br>
-                    <br></br>I also have a small art business [ hua 花 studios ] where I occasionally booth at craft fairs, and a past life where I did videography & photography. 
+                    <br></br>I also have a small art business [ <a href="https://www.instagram.com/hua.studios_/" target="_blank">hua 花 studios</a> ] where I occasionally booth at craft fairs, and a past youtube channel [ <a href="https://www.youtube.com/@sincerelykatie" target="_blank">sincerely, katie</a>]. 
                     <br></br><br></br>You can often find me debugging a coding project, sketching on my iPad, drinking a cup of oolong boba milk tea, or watching the newest animated movie/show (Arcane!). </p>
             </div>
 

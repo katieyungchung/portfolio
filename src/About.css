@@ -22,6 +22,15 @@
     width: 800px;
 }
 
+.about-text a {
+    color: #70A068;
+}
+
+.about-text a:hover {
+    text-decoration: underline;
+    text-decoration-color: #70A068;
+}
+
 .about-animation {
     width: 350px;
 }
