@@ -1,6 +1,6 @@
-# Portfolio
+# README
 
-My portfolio
+This is my portfolio website. 
 
 ### `npm start`
 
