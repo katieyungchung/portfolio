@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.fab580f2.css",
+    "main.js": "/portfolio/static/js/main.dd45d48f.js",
+    "static/media/vid.mp4": "/portfolio/static/media/vid.65f89ea79611b080356f.mp4",
+    "static/media/photography-portfolio.png": "/portfolio/static/media/photography-portfolio.7ade63ec851236bda613.png",
+    "static/media/kikisdeliveryservice.png": "/portfolio/static/media/kikisdeliveryservice.b834550716ce9a3e7cf3.png",
+    "static/media/nomnoms-img.png": "/portfolio/static/media/nomnoms-img.ad1ce3d5db02b2bc2ce1.png",
+    "static/media/Menlo-Regular.ttf": "/portfolio/static/media/Menlo-Regular.92e41f43900c256f2286.ttf",
+    "static/media/candiid-img.png": "/portfolio/static/media/candiid-img.fc28029ee3d6eb73e15b.png",
+    "static/media/about-img.png": "/portfolio/static/media/about-img.bfbd1e51dfbd4af38709.png",
+    "static/media/home-animation.mp4": "/portfolio/static/media/home-animation.b4f1f60a85850699453a.mp4",
+    "static/media/signbridge-img.png": "/portfolio/static/media/signbridge-img.39300f5991b977a7dab8.png",
+    "static/media/MADE Mirage Bold PERSONAL USE.otf": "/portfolio/static/media/MADE Mirage Bold PERSONAL USE.2fb1cb867ac816cd61c5.otf",
+    "index.html": "/portfolio/index.html",
+    "main.fab580f2.css.map": "/portfolio/static/css/main.fab580f2.css.map",
+    "main.dd45d48f.js.map": "/portfolio/static/js/main.dd45d48f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fab580f2.css",
+    "static/js/main.dd45d48f.js"
+  ]
+}
