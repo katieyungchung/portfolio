@@ -45,11 +45,6 @@
     border-radius: 8px;
 }
 
-.home-project-img:hover {
-    /* border: 1px solid black; */
-    /* opacity: 0.5; */
-}
-
 #proj2 {
     width: 40vw;
     justify-content: center;
@@ -62,6 +57,7 @@
     display: flex;
     margin-top: 20px;
     margin-left: 15px;
+    flex-wrap: wrap;
 }
 
 .home-tag {
@@ -76,10 +72,6 @@
     display: flex;
 }
 
-.home-tag:hover {
-    /* background-color: lightgrey; */
-}
-
 .home-project-description {
     width: 40vw;
     height: 23vw;
@@ -92,9 +84,6 @@
 
 .home-bio p {
     font-size: 18px;
-    /* margin: 0;
-    margin */
-    /* margin: 5px; */
 }
 
 .home-bio-link1:hover {

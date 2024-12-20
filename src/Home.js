@@ -53,10 +53,12 @@ const Home = () => {
             </div>
 
             <h1 className="home-projects-h1">Projects</h1>
+            <a href="https://youtu.be/a5zCg09IoQU" target="_blank"> 
             <div className="home-projects">
                 <div className="home-project-img" style={divStyle1}>
                     {/* <img src={NomNomsImg} alt="NomNoms app design"/> */}
                 </div>
+               
                 <div className="home-project-description">
                     <h1>🍔 NomNoms</h1>
                     <p>Creating a community for restaurant owners and foodies to come together and discover new food! </p>
@@ -66,6 +68,8 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            </a>
+            <a href="https://docs.google.com/presentation/d/1cBbBwxESN827hElh_WEPNk4qZx3_NU_C/edit?usp=sharing&ouid=114504858767344689663&rtpof=true&sd=true" target="_blank">
             <div className="home-projects">
                 <div className="home-project-description" id="proj2">
                     <h1>🤟 SignBridge</h1>
@@ -79,6 +83,8 @@ const Home = () => {
                 </div>
                 <div className="home-project-img" style={divStyle2}></div>
             </div>
+            </a>
+            <a href="https://docs.google.com/presentation/d/1RtLDU5tFFY4XBTAHZeaua-Gp6XVlwIxIA4T1RY6Tspw/edit?usp=sharing" target="_blank">
             <div className="home-projects">
                 <div className="home-project-img" style={divStyle3}></div>
                 <div className="home-project-description">
@@ -89,6 +95,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            </a>
         </>
     );
 }

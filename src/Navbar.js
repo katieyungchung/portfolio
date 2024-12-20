@@ -20,26 +20,13 @@ export const Navbar = () => {
                     </NavLink>
                     
                     <NavLink 
-                        to="/tech" 
+                        to="/works" 
                         end 
                         className={({ isActive }) => isActive ? 'nav-link active-link' : 'nav-link'}
                     >
-                        tech
+                        works
                     </NavLink>
-                    <NavLink 
-                        to="/design" 
-                        end 
-                        className={({ isActive }) => isActive ? 'nav-link active-link' : 'nav-link'}
-                    >
-                        design
-                    </NavLink>
-                    <NavLink 
-                        to="/art" 
-                        end 
-                        className={({ isActive }) => isActive ? 'nav-link active-link' : 'nav-link'}
-                    >
-                        art
-                    </NavLink>
+                    <a href="http://bit.ly/katieyungchung" target="_blank">art</a>
                     <NavLink 
                         to="/about" 
                         end 

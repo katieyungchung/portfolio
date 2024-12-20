@@ -54,10 +54,24 @@
     transform: scale(1.04); */
 }
 
-.active-link {
-    text-decoration: underline;
-    text-decoration-color: #70A068;
+.navlinks a {
+    font-size: 1rem;
+    font-family: 'Menlo', sans-serif;
+    margin: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
 }
+
+.navlinks a:hover {
+    color: #70A068;
+}
+
+.active-link {
+    text-decoration: underline !important;
+    text-decoration-color: #70A068 !important;
+    /* background-color: grey; */
+} 
 
 .star-icon {
     padding-top: 20px;

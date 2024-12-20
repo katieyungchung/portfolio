@@ -1,11 +1,6 @@
 import React from 'react';  
-import HomeAnimation from './assets/vid.mp4';
 import './About.css';
-import CandiidImg from './assets/candiid-img.png';
-import SignBridgeImg from './assets/signbridge-img.png';
-import NomNomsImg from './assets/nomnoms-img.png';
 import HomeAnimation2 from './assets/home-animation.mp4';
-
 
 const About = () => {
 
@@ -13,8 +8,6 @@ const About = () => {
         <div className="about-page">
         <h1>About</h1>
         <div className="about-div">
-            
-            {/* <div className="about-personal-img"></div> */}
             <div className="about-text">
                 <p>Hi I’m Katie (she/her)! I’m a 2nd year Computer Science and Engineering student at UCLA. I’m passionate about the intersection between art and technology, namely human-computer interaction, computer graphics & animation, and UI/UX Design. 
                     <br></br><br></br>
@@ -32,7 +25,6 @@ const About = () => {
             
         </div>
         <div className="about-gallery">
-            {/* <h1>My gallery</h1> */}
         </div>
         </div>
     );
