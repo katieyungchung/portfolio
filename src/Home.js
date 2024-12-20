@@ -1,23 +1,51 @@
 import React from 'react';  
 import HomeAnimation from './assets/vid.mp4';
+import HomeAnimation2 from './assets/home-animation.mp4';
 import './Home.css';
+import CandiidImg from './assets/candiid-img.png';
+import SignBridgeImg from './assets/signbridge-img.png';
+import NomNomsImg from './assets/nomnoms-img.png';
+
 
 const Home = () => {
+
+    const divStyle1 = {
+        backgroundImage: `url(${NomNomsImg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+    };
+
+    const divStyle2 = {
+        backgroundImage: `url(${SignBridgeImg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+    };
+
+    const divStyle3 = {
+        backgroundImage: `url(${CandiidImg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+    };
+
     return (
         <>
             <div className="home-header">
 
             <div className="home-bio">
-                <h1>Hi, I'm Katie!</h1>
-                <p>I’M CURRENTLY AT UCLA STUDYING COMPUTER SCIENCE AND ENGINEERING WITH AN INTEREST IN HUMAN COMPUTER INTERACTION, COMPUTER GRAPHICS/ANIMATION, AND UI/UX DESIGN</p>
-
-                <p>UNDERGRADUATE RESEARCHER</p>
-                <p>@ COMPUTING AND DISCOVERY LAB</p>
-                <p>WEB DEVELOPER AND DESIGNER</p>
-                <p>@ ANDERSON SCHOOL OF MANAGEMENT</p>
+                <h1>Hi, I'm <span style={{ color: '#70A068', }}>Katie!</span></h1>
+                <p>I'm currently at UCLA studying Computer Science and Engineering with an interest in human-computer interaction, computer graphics/animation, generative AI, and UI/UX Design 👩🏻‍💻</p>
+                <br></br>
+                <p className="home-bio-link">Undergraduate student 📖</p>
+                <a href="https://eunicemjun.com/bio/" target="_blank"><p className="home-bio-link1"> @ <span style={{ color: '#70A068'}}>Computing and Discovery Lab</span>  <span style={{ fontSize: '25px', color: '#70A068' }}>↗</span></p></a>
+                
+                <p className="home-bio-link">Web Developer & Designer 🖌️ </p>
+                <a href="https://www.anderson.ucla.edu/alumni" target="_blank"><p className="home-bio-link1"> @ <span style={{ color: '#70A068'}}> Anderson School of Management</span>  <span style={{ fontSize: '25px', color: '#70A068' }}>↗</span></p></a>
             </div>
             
-            <video className="home-animation" autoPlay loop muted controlsList="noplaybackrate nodownload" disablePictureInPicture width="600">
+            <video className="home-animation1" autoPlay loop muted controlsList="noplaybackrate nodownload" disablePictureInPicture width="600">
                 <source src={HomeAnimation} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
@@ -26,27 +54,39 @@ const Home = () => {
 
             <h1 className="home-projects-h1">Projects</h1>
             <div className="home-projects">
-                <div className="home-project-img"></div>
+                <div className="home-project-img" style={divStyle1}>
+                    {/* <img src={NomNomsImg} alt="NomNoms app design"/> */}
+                </div>
                 <div className="home-project-description">
-                    <h1>NomNoms</h1>
-                    <p>Description</p>
-                    <div className="home-tags"></div>
+                    <h1>🍔 NomNoms</h1>
+                    <p>Creating a community for restaurant owners and foodies to come together and discover new food! </p>
+                    <div className="home-tags">
+                        <div className="home-tag">Frontend Development</div>
+                        <div className="home-tag">UI/UX Design</div>
+                    </div>
                 </div>
             </div>
             <div className="home-projects">
-                <div className="home-project-description">
-                    <h1>SignBridge</h1>
-                    <p>Description</p>
-                    <div className="home-tags"></div>
+                <div className="home-project-description" id="proj2">
+                    <h1>🤟 SignBridge</h1>
+                    {/* <p>Making the process of learning American Sign Language (ASL) more accessible with powerful AI tools.</p> */}
+                    <p>Making the process of learning American Sign Language (ASL) more accessible with powerful AI tools.</p>
+                    <div className="home-tags">
+                        <div className="home-tag">UI/UX Design</div>
+                        <div className="home-tag">Branding</div>
+                        <div className="home-tag">Marketing</div>
+                    </div>
                 </div>
-                <div className="home-project-img"></div>
+                <div className="home-project-img" style={divStyle2}></div>
             </div>
             <div className="home-projects">
-                <div className="home-project-img"></div>
+                <div className="home-project-img" style={divStyle3}></div>
                 <div className="home-project-description">
-                    <h1>Candiid</h1>
-                    <p>Description</p>
-                    <div className="home-tags"></div>
+                    <h1>📸 Candiid</h1>
+                    <p>A better way to plan hangouts and document unforgettable memories.</p>
+                    <div className="home-tags">
+                        <div className="home-tag">UI/UX Design</div>
+                    </div>
                 </div>
             </div>
         </>

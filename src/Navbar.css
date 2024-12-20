@@ -11,6 +11,8 @@
   }
   
 .top-left-name {
+    display: flex;
+    flex-direction: row;
     font-weight: 500;
     margin-left: 50px;
 }
@@ -21,11 +23,19 @@
 }
 
 .nav-link {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: 'Menlo', sans-serif;
     margin: 20px;
     font-weight: 400;
+    text-decoration: none;
+    color: black;
 }
+
+/* .active-link {
+    text-decoration: none;
+    color: black;
+    background-color: black;
+} */
 
 .navbar {
     width: 100vw;
@@ -37,8 +47,23 @@
 }
   
 .nav-link:hover {
-    color: #845746;
-    transform: scale(1.04);
+    /* text-decoration: underline; */
+    color: #70A068;
+    /* text-decoration-color: #70A068; */
+    /* color: #845746;
+    transform: scale(1.04); */
+}
+
+.active-link {
+    text-decoration: underline;
+    text-decoration-color: #70A068;
+}
+
+.star-icon {
+    padding-top: 20px;
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
 }
 
 @media (max-width: 768px) {

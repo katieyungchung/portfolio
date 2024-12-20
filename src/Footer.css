@@ -1,0 +1,70 @@
+.footer-div-line {
+    width: 93%;
+}
+
+.footer-left {
+    margin-top: 40px;
+    margin-left: 3.5%;
+    align-items: flex-start;
+}
+
+.footer-div {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+   
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap
+}
+
+.footer-right {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 40px;
+    flex-wrap: nowrap
+}
+
+.footer-icon {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+#footer-icon1 {
+    background-image: url('assets/Github.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+#footer-icon1:hover {
+    background-image: url('assets/Github-hover.png');
+}
+
+#footer-icon2 {
+    background-image: url('assets/Linkedin.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+#footer-icon2:hover {
+    background-image: url('assets/Linkedin-hover.png');
+}
+
+#footer-icon3 {
+    background-image: url('assets/Mail.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+#footer-icon3:hover {
+    background-image: url('assets/Mail-hover.png');
+}
