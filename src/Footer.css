@@ -68,3 +68,20 @@
 #footer-icon3:hover {
     background-image: url('assets/Mail-hover.png');
 }
+
+@media (max-width: 800px) {
+    .footer-left p {
+        font-size: 15px;
+    }
+
+    .footer-icon {
+        width: 35px;
+        height: 35px;
+        margin-right: 0;
+        margin-left: 15px;
+    }
+
+    .footer-right {
+        margin-right: 20px;
+    }
+}

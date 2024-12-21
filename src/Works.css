@@ -1,8 +1,19 @@
 .works-p {
     margin-left: 100px;
+    font-size: 15px;
 }
 
 .work-projects-h1 {
     margin-top: 50px;
     margin-left: 100px;
+}
+
+@media (max-width: 900px) {
+    .work-projects-h1 {
+        margin-left: 50px;
+    }
+
+    .works-p {
+        margin-left: 50px;
+    }
 }

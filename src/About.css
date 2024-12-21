@@ -2,7 +2,6 @@
     margin-left: 100px;
     width: 270px;
     height: 400px;
-    /* background-color: grey; */
 }
 
 .about-div {
@@ -32,12 +31,31 @@
 }
 
 .about-animation {
-    width: 350px;
+    width: 325px;
 }
 
 .about-personal-img {
     background-image: url(assets/about-img.png);
     background-size: contain;
     background-repeat: no-repeat;
+}
 
+@media (max-width: 800px) {
+    .about-animation {
+        width: 200px;
+    }
+
+    .about-div {
+        flex-direction: column;
+    }
+
+    .about-text {
+        width: 80vw;
+        margin: 20px;
+    }
+
+    .about-page h1 {
+        margin-left: 50px;
+        margin-bottom: 0;
+    }
 }

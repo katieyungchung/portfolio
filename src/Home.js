@@ -70,7 +70,7 @@ const Home = () => {
             </div>
             </a>
             <a href="https://docs.google.com/presentation/d/1cBbBwxESN827hElh_WEPNk4qZx3_NU_C/edit?usp=sharing&ouid=114504858767344689663&rtpof=true&sd=true" target="_blank">
-            <div className="home-projects">
+            <div className="home-projects" id="proj2div">
                 <div className="home-project-description" id="proj2">
                     <h1>🤟 SignBridge</h1>
                     {/* <p>Making the process of learning American Sign Language (ASL) more accessible with powerful AI tools.</p> */}
