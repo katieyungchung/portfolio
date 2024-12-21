@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.fab580f2.css",
-    "main.js": "/portfolio/static/js/main.c6595560.js",
+    "main.css": "/portfolio/static/css/main.c6018fe7.css",
+    "main.js": "/portfolio/static/js/main.db18afc2.js",
     "static/media/vid.mp4": "/portfolio/static/media/vid.65f89ea79611b080356f.mp4",
     "static/media/photography-portfolio.png": "/portfolio/static/media/photography-portfolio.7ade63ec851236bda613.png",
     "static/media/kikisdeliveryservice.png": "/portfolio/static/media/kikisdeliveryservice.b834550716ce9a3e7cf3.png",
@@ -13,11 +13,11 @@
     "static/media/signbridge-img.png": "/portfolio/static/media/signbridge-img.39300f5991b977a7dab8.png",
     "static/media/MADE Mirage Bold PERSONAL USE.otf": "/portfolio/static/media/MADE Mirage Bold PERSONAL USE.2fb1cb867ac816cd61c5.otf",
     "index.html": "/portfolio/index.html",
-    "main.fab580f2.css.map": "/portfolio/static/css/main.fab580f2.css.map",
-    "main.c6595560.js.map": "/portfolio/static/js/main.c6595560.js.map"
+    "main.c6018fe7.css.map": "/portfolio/static/css/main.c6018fe7.css.map",
+    "main.db18afc2.js.map": "/portfolio/static/js/main.db18afc2.js.map"
   },
   "entrypoints": [
-    "static/css/main.fab580f2.css",
-    "static/js/main.c6595560.js"
+    "static/css/main.c6018fe7.css",
+    "static/js/main.db18afc2.js"
   ]
 }
