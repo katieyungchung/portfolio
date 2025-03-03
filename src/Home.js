@@ -5,6 +5,7 @@ import './Home.css';
 import CandiidImg from './assets/candiid-img.png';
 import SignBridgeImg from './assets/signbridge-img.png';
 import NomNomsImg from './assets/nomnoms-img.png';
+import TimeLeafImg from './assets/time-leaf.png';
 
 
 const Home = () => {
@@ -25,6 +26,13 @@ const Home = () => {
 
     const divStyle3 = {
         backgroundImage: `url(${CandiidImg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+    };
+
+    const divStyle4 = {
+        backgroundImage: `url(${TimeLeafImg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -52,7 +60,32 @@ const Home = () => {
             
             </div>
 
+
+            
+           
+
             <h1 className="home-projects-h1">Projects</h1>
+
+
+
+            <a href="https://www.youtube.com/watch?v=-2mBjjXesno" target="_blank">
+            <div className="home-projects" id="proj2div">
+                <div className="home-project-description" id="proj2">
+                    <h1>🌱 Time Leaf</h1>
+                    {/* <p>Making the process of learning American Sign Language (ASL) more accessible with powerful AI tools.</p> */}
+                    <p>Making the process of learning American Sign Language (ASL) more accessible with powerful AI tools.</p>
+                    <div className="home-tags" id="proj4-tags"> 
+                        <div className="home-tag">Full Stack Development</div>
+                        <div className="home-tag">Google Gemini AI</div>
+                        <div className="home-tag">MongoDB Atlas</div>
+                        <div className="home-tag">UI/UX Design</div>
+                        <div className="home-tag">Illustration</div>
+                    </div>
+                </div>
+                <div className="home-project-img" style={divStyle4}></div>
+            </div>
+            </a>
+
             <a href="https://youtu.be/a5zCg09IoQU" target="_blank"> 
             <div className="home-projects">
                 <div className="home-project-img" style={divStyle1}>

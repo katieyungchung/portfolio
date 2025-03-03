@@ -121,6 +121,13 @@ a {
     margin: 100px;
 }
 
+#proj4-tags {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1px; /* Optional: Adds spacing between tags */
+    flex-wrap: wrap; /* Optional: Ensures tags wrap properly */
+}
+
 @media (max-width: 900px) {
     .home-project-description {
         height: 200px;
@@ -153,7 +160,15 @@ a {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-    }    
+    }  
+    
+    #proj4tags {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px; /* Optional: Adds spacing between tags */
+        flex-wrap: wrap; /* Optional: Ensures tags wrap properly */
+    }
+
 }
 
 @media (max-width: 1000px) {
@@ -189,6 +204,17 @@ a {
         /* flex-direction: column-reverse; */
     }
 
+    #proj4div {
+        flex-direction: column-reverse;
+    }
+
+    /* #proj4tags {
+        margin-left: 15px;
+        flex-direction: right;
+    } */
+
+  
+
     #proj2div {
         flex-direction: column-reverse;
     }
@@ -199,5 +225,13 @@ a {
         margin-bottom: 20px;
         margin-top: 50px;
     }
+
+    #proj4tags {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px; /* Optional: Adds spacing between tags */
+        flex-wrap: wrap; /* Optional: Ensures tags wrap properly */
+    }
+
 }
 

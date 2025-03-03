@@ -6,6 +6,7 @@ import SignBridgeImg from './assets/signbridge-img.png';
 import NomNomsImg from './assets/nomnoms-img.png';
 import PhotoImg from './assets/photography-portfolio.png';
 import KikiImg from'./assets/kikisdeliveryservice.png';
+import TimeLeafImg from './assets/time-leaf.png';
 
 
 const Works = () => {
@@ -46,10 +47,45 @@ const Works = () => {
         backgroundRepeat: 'no-repeat',
     };
 
+    const divStyle6 = {
+        backgroundImage: `url(${TimeLeafImg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+    };
+
     return (
         <>
             <h1 className="work-projects-h1">Works</h1>
             <p className="works-p">Click to learn more about each project!</p>
+
+
+            <a href="https://www.youtube.com/watch?v=-2mBjjXesno" target="_blank"> 
+            <div className="home-projects" id="proj4div">
+                <div className="home-project-img" style={divStyle6}>
+                    {/* <img src={NomNomsImg} alt="NomNoms app design"/> */}
+                </div>
+               
+                <div className="home-project-description">
+                    <h1>🌱 Time Leaf</h1>
+                    <p>Discover new passions with an AI personalized quiz, and learn new skills and track your engagement with your hobbies! </p>
+                    <div className="home-tags">
+                        <div className="home-tag">Full Stack Development</div>
+                        <div className="home-tag">Frontend Development</div>
+                        <div className="home-tag">Backend Development</div>
+                        <div className="home-tag">Google Gemini AI</div>
+                        <div className="home-tag">MongoDB Atlas</div>
+                        <div className="home-tag">UI/UX Design</div>
+                        <div className="home-tag">Illustration</div>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+
+
+
+
             <a href="https://youtu.be/a5zCg09IoQU" target="_blank"> 
             <div className="home-projects">
                 <div className="home-project-img" style={divStyle1}>
