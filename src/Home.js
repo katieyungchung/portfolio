@@ -73,7 +73,7 @@ const Home = () => {
                 <div className="home-project-description" id="proj2">
                     <h1>🌱 Time Leaf</h1>
                     {/* <p>Making the process of learning American Sign Language (ASL) more accessible with powerful AI tools.</p> */}
-                    <p>Making the process of learning American Sign Language (ASL) more accessible with powerful AI tools.</p>
+                    <p>Discover new passions with an AI personalized quiz, and learn new skills and track your engagement with your hobbies!</p>
                     <div className="home-tags" id="proj4-tags"> 
                         <div className="home-tag">Full Stack Development</div>
                         <div className="home-tag">Google Gemini AI</div>
