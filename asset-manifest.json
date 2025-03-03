@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.dfd49702.css",
-    "main.js": "/portfolio/static/js/main.68d5a6fd.js",
+    "main.js": "/portfolio/static/js/main.e9d6cd2c.js",
     "static/media/vid.mp4": "/portfolio/static/media/vid.65f89ea79611b080356f.mp4",
     "static/media/photography-portfolio.png": "/portfolio/static/media/photography-portfolio.7ade63ec851236bda613.png",
     "static/media/kikisdeliveryservice.png": "/portfolio/static/media/kikisdeliveryservice.b834550716ce9a3e7cf3.png",
@@ -15,10 +15,10 @@
     "static/media/MADE Mirage Bold PERSONAL USE.otf": "/portfolio/static/media/MADE Mirage Bold PERSONAL USE.2fb1cb867ac816cd61c5.otf",
     "index.html": "/portfolio/index.html",
     "main.dfd49702.css.map": "/portfolio/static/css/main.dfd49702.css.map",
-    "main.68d5a6fd.js.map": "/portfolio/static/js/main.68d5a6fd.js.map"
+    "main.e9d6cd2c.js.map": "/portfolio/static/js/main.e9d6cd2c.js.map"
   },
   "entrypoints": [
     "static/css/main.dfd49702.css",
-    "static/js/main.68d5a6fd.js"
+    "static/js/main.e9d6cd2c.js"
   ]
 }
