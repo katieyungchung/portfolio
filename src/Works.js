@@ -7,6 +7,7 @@ import NomNomsImg from './assets/nomnoms-img.png';
 import PhotoImg from './assets/photography-portfolio.png';
 import KikiImg from'./assets/kikisdeliveryservice.png';
 import TimeLeafImg from './assets/time-leaf.png';
+import SanctuaryImg from './assets/sanctuary.png';
 
 
 const Works = () => {
@@ -54,10 +55,34 @@ const Works = () => {
         backgroundRepeat: 'no-repeat',
     };
 
+    const divStyle7 = {
+        backgroundImage: `url(${SanctuaryImg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+    };
+
     return (
         <>
             <h1 className="work-projects-h1">Works</h1>
             <p className="works-p">Click to learn more about each project!</p>
+
+            <a href="https://www.canva.com/design/DAGj16LSylY/1b9LKOLGttbPr8mWwW5h3g/edit?utm_content=DAGj16LSylY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank"> 
+            <div className="home-projects">
+                <div className="home-project-img" style={divStyle7}></div>
+               
+                <div className="home-project-description">
+                    <h1>🌿 Sanctuary</h1>
+                    <p>Building safer communities for women and marginalized genders with safety maps, incident reports, safe walk, and more!</p>
+                    <div className="home-tags">
+                        <div className="home-tag">Mobile App Development</div>
+                        <div className="home-tag">Frontend Development</div>
+                        <div className="home-tag">React Native</div>
+                        <div className="home-tag">HTML/CSS</div>
+                    </div>
+                </div>
+            </div>
+            </a>
 
 
             <a href="https://www.youtube.com/watch?v=-2mBjjXesno" target="_blank"> 

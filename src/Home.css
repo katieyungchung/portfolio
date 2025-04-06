@@ -124,8 +124,8 @@ a {
 #proj4-tags {
     display: flex;
     justify-content: flex-end;
-    gap: 1px; /* Optional: Adds spacing between tags */
-    flex-wrap: wrap; /* Optional: Ensures tags wrap properly */
+    gap: 1px; 
+    flex-wrap: wrap;
 }
 
 @media (max-width: 900px) {
@@ -162,11 +162,11 @@ a {
         align-items: flex-start;
     }  
     
-    #proj4tags {
+    #proj4-tags {
         display: flex;
-        justify-content: flex-end;
-        gap: 10px; /* Optional: Adds spacing between tags */
-        flex-wrap: wrap; /* Optional: Ensures tags wrap properly */
+        justify-content: unset;
+        gap: 1px; 
+        flex-wrap: wrap;
     }
 
 }
@@ -206,14 +206,7 @@ a {
 
     #proj4div {
         flex-direction: column-reverse;
-    }
-
-    /* #proj4tags {
-        margin-left: 15px;
-        flex-direction: right;
-    } */
-
-  
+    }  
 
     #proj2div {
         flex-direction: column-reverse;
@@ -226,11 +219,11 @@ a {
         margin-top: 50px;
     }
 
-    #proj4tags {
+    #proj4-tags {
         display: flex;
-        justify-content: flex-end;
-        gap: 10px; /* Optional: Adds spacing between tags */
-        flex-wrap: wrap; /* Optional: Ensures tags wrap properly */
+        justify-content: unset;
+        gap: 1px; 
+        flex-wrap: wrap;
     }
 
 }

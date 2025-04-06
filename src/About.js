@@ -13,7 +13,7 @@ const About = () => {
                     <br></br><br></br>
                     I’m also passionate about ethics and making tech more accessible for everyone. I’m a student organizer for <a href="https://www.qwerhacks.com/" target="_blank">QWER Hacks</a>, a hackathon that empowers the LGBTQIA+ community. 
                     <br></br>
-                    <br></br>I also have a small art business [ <a href="https://www.instagram.com/hua.studios_/" target="_blank">hua 花 studios</a> ] where I occasionally booth at craft fairs, and a past youtube channel [ <a href="https://www.youtube.com/@sincerelykatie" target="_blank">sincerely, katie</a>]. 
+                    <br></br>I also have a small art business [ <a href="https://www.instagram.com/hua.studios_/" target="_blank">hua 花 studios</a> ] where I occasionally booth at craft fairs, and a past youtube channel [ <a href="https://www.youtube.com/@sincerelykatie" target="_blank">sincerely, katie</a> ]. 
                     <br></br><br></br>You can often find me debugging a coding project, sketching on my iPad, drinking a cup of oolong boba milk tea, or watching the newest animated movie/show (Arcane!). </p>
             </div>
 

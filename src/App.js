@@ -22,9 +22,4 @@ function App () {
   )
 }
 
-// function ExternalRedirect() {
-//   window.open('http://bit.ly/katieyungchung', '_blank');
-//   return null;
-// }
-
 export default App;

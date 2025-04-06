@@ -6,6 +6,7 @@ import CandiidImg from './assets/candiid-img.png';
 import SignBridgeImg from './assets/signbridge-img.png';
 import NomNomsImg from './assets/nomnoms-img.png';
 import TimeLeafImg from './assets/time-leaf.png';
+import SanctuaryImg from './assets/sanctuary.png';
 
 
 const Home = () => {
@@ -38,6 +39,15 @@ const Home = () => {
         backgroundRepeat: 'no-repeat',
     };
 
+    const divStyle5 = {
+        backgroundImage: `url(${SanctuaryImg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        border: '1px solid rgba(72, 72, 72, 0.2)',
+        borderRadius: '10px', // Optional: rounded corners
+    };
+
     return (
         <>
             <div className="home-header">
@@ -60,13 +70,24 @@ const Home = () => {
             
             </div>
 
+            <h1 className="home-projects-h1">Featured Works</h1>
 
-            
-           
-
-            <h1 className="home-projects-h1">Projects</h1>
-
-
+            <a href="https://www.canva.com/design/DAGj16LSylY/1b9LKOLGttbPr8mWwW5h3g/edit?utm_content=DAGj16LSylY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank"> 
+            <div className="home-projects">
+                <div className="home-project-img" style={divStyle5}></div>
+               
+                <div className="home-project-description">
+                    <h1>🌿 Sanctuary</h1>
+                    <p>Building safer communities for women and marginalized genders with safety maps, incident reports, safe walk, and more!</p>
+                    <div className="home-tags">
+                        <div className="home-tag">Mobile App Development</div>
+                        <div className="home-tag">Frontend Development</div>
+                        <div className="home-tag">React Native</div>
+                        <div className="home-tag">HTML/CSS</div>
+                    </div>
+                </div>
+            </div>
+            </a>
 
             <a href="https://www.youtube.com/watch?v=-2mBjjXesno" target="_blank">
             <div className="home-projects" id="proj2div">
@@ -102,6 +123,7 @@ const Home = () => {
                 </div>
             </div>
             </a>
+
             <a href="https://docs.google.com/presentation/d/1cBbBwxESN827hElh_WEPNk4qZx3_NU_C/edit?usp=sharing&ouid=114504858767344689663&rtpof=true&sd=true" target="_blank">
             <div className="home-projects" id="proj2div">
                 <div className="home-project-description" id="proj2">
