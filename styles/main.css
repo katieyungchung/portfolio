@@ -1,0 +1,65 @@
+
+
+
+body { outline: 8px solid red; }
+
+
+@font-face {
+  font-family: 'InstrumentSerif'; 
+  src: url('../assets/fonts/InstrumentSerif-Regular.ttf') format('truetype'); 
+  font-weight: 100; 
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'InstrumentSerif'; 
+  src: url('../assets/fonts/InstrumentSerif-Italic.ttf') format('truetype'); 
+  font-weight: 400; 
+  font-style: italic;
+}
+
+h1 {
+  font-family: 'InstrumentSerif', serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 24px;
+  right: 32px;
+  z-index: 1000;
+}
+
+/* Nav links */
+.navbar nav {
+  display: flex;
+  gap: 24px;
+}
+
+/* Link styling */
+.navbar a {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #222;
+  text-decoration: none;
+  position: relative;
+}
+
+/* Subtle hover underline */
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 1px;
+  background-color: #222;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.2s ease;
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
