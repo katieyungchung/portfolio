@@ -1,9 +1,3 @@
-
-
-
-body { outline: 8px solid red; }
-
-
 @font-face {
   font-family: 'InstrumentSerif'; 
   src: url('../assets/fonts/InstrumentSerif-Regular.ttf') format('truetype'); 
@@ -18,8 +12,45 @@ body { outline: 8px solid red; }
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'Inconsolata'; 
+  src: url('../assets/fonts/Inconsolata-Light.ttf') format('truetype'); 
+  font-weight: 300; 
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica'; 
+  src: url('../assets/fonts/HelveticaNeueLight.otf') format('opentype'); 
+  font-weight: 300; 
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica'; 
+  src: url('../assets/fonts/HelveticaNeueMedium.otf') format('opentype'); 
+  font-weight: 400; 
+  font-style: normal;
+}
+
+
 h1 {
   font-family: 'InstrumentSerif', serif;
+}
+
+h3 {
+  font-family: 'InstrumentSerif', serif;
+  font-size: 20px;
+}
+
+h4 {
+  font-family: 'Inconsolata', serif;
+  font-size: 15px;
+}
+
+p {
+  font-family: 'Helvetica', serif;
+  font-weight: 400;
 }
 
 .navbar {
@@ -37,7 +68,7 @@ h1 {
 
 /* Link styling */
 .navbar a {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: Helvetica;
   font-size: 14px;
   font-weight: 500;
   color: #222;
@@ -62,4 +93,45 @@ h1 {
 .navbar a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.video-card {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.video-card:visited {
+  color: inherit;
+}
+
+.video-thumb:hover {
+  transform: scale(0.97);
+}
+
+.video-thumb {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 7px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.video-title {
+  margin-top: 0.5rem; 
+  margin-bottom: 0.25rem;
+}
+
+.video-subtitle {
+  margin-top: 0;
 }
