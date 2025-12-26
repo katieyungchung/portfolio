@@ -1,3 +1,7 @@
+:root {
+  --primary-green: #BFDF94; 
+}
+
 @font-face {
   font-family: 'InstrumentSerif'; 
   src: url('../assets/fonts/InstrumentSerif-Regular.ttf') format('truetype'); 
@@ -33,9 +37,9 @@
   font-style: normal;
 }
 
-
 h1 {
   font-family: 'InstrumentSerif', serif;
+  font-size: 50px;
 }
 
 h3 {
@@ -53,23 +57,50 @@ p {
   font-weight: 400;
 }
 
-.navbar {
-  position: fixed;
-  top: 24px;
-  right: 32px;
-  z-index: 1000;
+.heading {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1100px;     
+  margin: 0 auto 4rem;
+  align-items: start;
 }
 
-/* Nav links */
-.navbar nav {
+.heading h1 {
+  margin-top: 0;
+}
+
+.navbar {
   display: flex;
-  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 32px;
+}
+
+/* Left icon */
+.nav-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.nav-left {
+  transition: transform 0.2s ease;
+}
+
+.nav-left:hover {
+  transform: scale(1.2);
+}
+
+/* Right nav links */
+.nav-right {
+  display: flex;
+  gap: 40px;
 }
 
 /* Link styling */
-.navbar a {
+.nav-right a {
   font-family: Helvetica;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   color: #222;
   text-decoration: none;
@@ -77,29 +108,33 @@ p {
 }
 
 /* Subtle hover underline */
-.navbar a::after {
+.nav-right a::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: -4px;
   width: 100%;
-  height: 1px;
-  background-color: #222;
+  height: 1.7px;
+  background-color: #BFDF94;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.2s ease;
 }
 
-.navbar a:hover::after {
+.nav-right a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
+}
+
+.navbar-text {
+  margin: 10px;
 }
 
 .video-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -108,13 +143,14 @@ p {
   display: block;
   text-decoration: none;
   color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .video-card:visited {
   color: inherit;
 }
 
-.video-thumb:hover {
+.video-card:hover {
   transform: scale(0.97);
 }
 
@@ -134,4 +170,57 @@ p {
 
 .video-subtitle {
   margin-top: 0;
+  color: gray;
+}
+
+.header-image {
+  background-color: gray;
+  height: 200px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 14px;
+  padding: 24px 32px;
+}
+
+.footer-icon {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.social-link {
+  color: rgb(143, 143, 143);
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.25s ease;
+}
+
+.social-link:hover {
+  color: var(--primary-green); /* accent color */
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  transition: transform 0.25s ease;
+}
+
+/* bigger icons */
+.github .icon,
+.mail .icon {
+  width: 26px;
+  height: 26px;
+}
+
+/* keep LinkedIn smaller */
+.linkedin .icon {
+  width: 22px;
+  height: 22px;
 }
