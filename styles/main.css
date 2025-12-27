@@ -2,17 +2,33 @@
   --primary-green: #BFDF94; 
 }
 
+/* html {
+  cursor: url('../assets/icons/cursor3.png') 16 16, auto;
+}
+
+a:hover,
+button:hover {
+  cursor: url('../assets/icons/cursor3.png') 16 16, pointer;
+} */
+
+@font-face {
+  font-family: 'ThatThat'; 
+  src: url('../assets/fonts/thatthatnewpixelfamilytest-square.otf') format('opentype'); 
+  font-weight: 400; 
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'InstrumentSerif'; 
   src: url('../assets/fonts/InstrumentSerif-Regular.ttf') format('truetype'); 
-  font-weight: 100; 
+  font-weight: 400; 
   font-style: normal;
 }
 
 @font-face {
   font-family: 'InstrumentSerif'; 
   src: url('../assets/fonts/InstrumentSerif-Italic.ttf') format('truetype'); 
-  font-weight: 400; 
+  font-weight: 100; 
   font-style: italic;
 }
 
@@ -38,8 +54,10 @@
 }
 
 h1 {
+  /* font-family: 'ThatThat', serif; */
+  font-size: 55px;
+  font-weight: 400;
   font-family: 'InstrumentSerif', serif;
-  font-size: 50px;
 }
 
 h3 {
@@ -81,6 +99,7 @@ p {
 .nav-icon {
   width: 60px;
   height: 60px;
+  border-radius: 4px;
 }
 
 .nav-left {
@@ -223,16 +242,25 @@ p {
 
 .footer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between; /* left & right split */
   align-items: center;
-  gap: 14px;
   padding: 24px 32px;
 }
 
-.footer-icon {
-  width: 22px;
-  height: 22px;
-  display: block;
+.footer-left {
+  margin-right: auto;
+}
+
+.footer-right {
+  display: flex;
+  gap: 13px; /* spacing between icons */
+  align-items: center;
+}
+
+.footer img {
+  width: 60px;
+  height: auto;
+  border-radius: 4px;
 }
 
 .social-link {
@@ -252,22 +280,15 @@ p {
   transition: transform 0.25s ease;
 }
 
-/* bigger icons */
 .github .icon,
 .mail .icon {
   width: 26px;
   height: 26px;
 }
 
-/* keep LinkedIn smaller */
 .linkedin .icon {
   width: 22px;
   height: 22px;
-}
-
-.about-image {
-  width: 350px;
-  height: auto;
 }
 
 .about {
@@ -284,7 +305,7 @@ p {
 }
 
 .about-image {
-  width: 300px;
+  width: 350px;
   height: auto;
 }
 
@@ -299,6 +320,7 @@ p {
 
 .about-text p {
   font-weight: 300;
+  font-size: 18px;
 }
 
 .about-heading {
@@ -308,7 +330,17 @@ p {
 }
 
 .about-heading h1 {
-  margin: 0;           
+  margin: 0;  
+  font-size: 42px;         
+}
+
+.about-social-links {
+  margin: 0;
+}
+
+.about-social-links p {
+  margin: 7px;
+  
 }
 
 .smiley {
