@@ -82,6 +82,11 @@ p {
   font-weight: 400;
 }
 
+li {
+  font-family: 'Helvetica', serif;
+  font-weight: 400;
+}
+
 .heading {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -375,5 +380,74 @@ p {
 .smiley {
   width: 50px;        
   height: auto;
+}
+
+/* .proj-heading {
+  display: flex;
+  justify-content: center;
+} */
+
+.proj-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;        /* centers everything horizontally */
+  text-align: center;
+  padding: 0px 32px;
+}
+
+.proj-title {
+  width: 100%;                /* allows left alignment */
+  max-width: 900px;           /* match content width */
+  text-align: left;           /* left-align only the title */
+  margin-bottom: 32px;
+}
+
+.header-image {
+  width: 100%;
+  max-width: 900px;
+  height: 200px;
+  background: #eee; /* placeholder */
+  border-radius: 12px;
+  margin-bottom: 48px;
+}
+
+.header-text {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 48px;
+  max-width: 900px;
+  width: 100%;
+  text-align: left; /* override center for readability */
+}
+
+.header-item h4 {
+  margin: 0 0 12px 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #777;
+}
+
+.header-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-item li {
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 900px) {
+  .header-text {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .header-text {
+    grid-template-columns: 1fr;
+  }
 }
 
