@@ -248,17 +248,26 @@ p {
 }
 
 .footer-left {
+  display: flex;
+  flex-direction: column;   /* stack vertically */
+  align-items: flex-start;  /* left-align text */
+  gap: 0px;                 /* control spacing */
   margin-right: auto;
+}
+
+.footer-left h4 {
+  margin-top: 10px;
 }
 
 .footer-right {
   display: flex;
   gap: 13px; /* spacing between icons */
-  align-items: center;
+  padding-top: 10px;
+  align-items: flex-end;
 }
 
 .footer img {
-  width: 60px;
+  width: 50px;
   height: auto;
   border-radius: 4px;
 }
