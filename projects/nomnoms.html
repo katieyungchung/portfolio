@@ -34,7 +34,8 @@
     <!-- Project Header -->
     <section class="proj-heading">
         <h1 class="proj-title">NomNoms 🍔</h1>
-        <p class="proj-subtitle">| Creating a community for restaurant owners and foodies to come together and discover new food! </p>
+        <p class="proj-subtitle">| Creating a community for restaurant owners and foodies to come together and discover
+            new food! </p>
 
         <div class="header-image">
             <img src="../assets/images/signbridge/signbridge-header.png" alt="Signbridge project header">
@@ -74,9 +75,10 @@
                 <ul>
                     <li><a href="https://www.figma.com/design/wpEpNOtqaME9hV26iggdF4/NomNoms-UI-UX-Design?node-id=1-203&t=6nFf1WV4Af1SIIG7-1"
                             target="blank_">Figma</a></li>
-                    <li><a href="https://docs.google.com/presentation/d/1J_-n9y0Hy367laCItHaK9GZRZclVWVaY38w-rAqGFnA/edit?usp=sharing" 
+                    <li><a href="https://docs.google.com/presentation/d/1J_-n9y0Hy367laCItHaK9GZRZclVWVaY38w-rAqGFnA/edit?usp=sharing"
                             target="blank_">Project deck</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=a5zCg09IoQU&feature=youtu.be" target="blank_">Video Demo</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=a5zCg09IoQU&feature=youtu.be" target="blank_">Video
+                            Demo</a></li>
                 </ul>
             </div>
         </div>
@@ -234,9 +236,19 @@
     <!-- Video Demo -->
     <section class="content-section" id="video-demo">
         <h2>Video Demo</h2>
-        <video class="video-thumb" src="../assets/videos/signbridge-preview.mp4" preload="metadata" playsinline
+        <video class="video-thumb" src="../assets/videos/nomnoms-preview.mp4" preload="metadata" playsinline muted
             controls></video>
-        <p>Recording of Figma prototype.</p>
+        <script>
+            const video = document.querySelector(".video-thumb");
+
+            video.muted = true;
+
+            video.addEventListener("volumechange", () => {
+                video.muted = true;
+                video.volume = 0;
+            });
+        </script>
+        <p>Short demo recording of key features</p>
     </section>
 
 </body>
