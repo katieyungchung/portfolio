@@ -70,9 +70,11 @@
             <div class="header-item">
                 <h4>Links</h4>
                 <ul>
-                    <li><a href="#">Project deck</a></li>
+                    <li><a href="https://www.figma.com/slides/GcPje9QzrjM23x3vyyQK5v/Rose-Garden-Demo-Day-Slides?node-id=1-498&t=rwnZoLzeIyqxTBgm-1"
+                            target="blank_">Project deck</a></li>
                     <li><a href="https://github.com/rose-garden-team/rose-garden" target="blank_">GitHub</a></li>
-                    <li><a href="#">Figma</a></li>
+                    <li><a href="https://www.figma.com/design/ndjN6f7mDYWhveqcqGivXs/Design-ROSEGARDEN?node-id=1-4&t=NXPt7DbeIjBQjPe8-1"
+                            target="blank_">Figma</a></li>
                 </ul>
             </div>
         </div>
@@ -108,88 +110,51 @@
     <section class="content-section">
         <h2>Key Features</h2>
 
-        <h3>Personalized Quiz</h3>
-        <div class="image-placeholder">
-            <img src="../assets/images/signbridge/signbridge-quiz.png">
-        </div>
-        <p>After signing up, users take a personalized quiz. This lets us understand their goals and prior ASL knowledge
-            so we can suggest the
-            right resources and lessons.
+        <h3>Onboarding</h3>
+        <p>
+            When first opening the app, users are guided through tutorial pages, prompted to create an account, and
+            asked to select initial journaling tags.
         </p>
+        <video class="video-thumb" src="../assets/videos/rosegarden-onboarding.mp4" preload="metadata" playsinline muted
+            autoplay loop controls></video>
 
-        <h3>Dashboard</h3>
-        <div class="image-placeholder">
-            <img src="../assets/images/signbridge/signbridge-dashboard.png">
-        </div>
-        <p>A central hub where users can check their ASL learning progress, jump into lessons, and view their progress
-            in relation to others.
+        </br>
+
+        <h3>Journaling User Flow</h3>
+        <p>
+            Each day, the user can select which of the rose, bud, thorn prompts they would like to journal for. Users
+            fill out each entry they select, and add a title and custom tags. The user can also customize their
+            journaling flower to plant in their digital garden.
         </p>
+        <video class="video-thumb" src="../assets/videos/rosegarden-journaling.mp4" preload="metadata" playsinline muted
+            autoplay loop controls></video>
 
-        <h3>Progress Page</h3>
-        <div class="image-placeholder">
-            <img src="../assets/images/signbridge/signbridge-progress.png">
-        </div>
-        <p>Users can see their progress more in-depth on the progress page. To gamify the ASL learning experience, we
-            offer checkpoints after users complete a certain amount of lessons.
+        </br>
+
+        <h3>FreeDraw</h3>
+        <p>
+            This feature was built with React SVG + Gesure Handler, and allows for freehand drawing text input and image
+            upload. The user can modify stroke width, select colors with the color wheel picker, undo, and
+            pan/pinch/rotate and delete pictures.
         </p>
+        <video class="video-thumb" src="../assets/videos/rosegarden-freedraw.mp4" preload="metadata" playsinline muted
+            autoplay loop controls></video>
 
-        <h3>Lessons</h3>
-        <div class="image-placeholder">
-            <img src="../assets/images/signbridge/signbridge-lessons.png">
-        </div>
-        <p>Users can view their upcoming lessons and get started.</p>
 
-        <h3>AI Tools</h3>
-        <div class="image-placeholder">
-            <img src="../assets/images/signbridge/signbridge-ai-tools.png">
-        </div>
-        <p>Users can use use SignBridge’s AI/ML video-to-text, ASL-to-voice, or word-to-ASL features to practice ASL and
-            get feedback in real time.
+        </br>
 
+        <h3>Calendar/Garden View</h3>
+        <p>
+            In the calendar view, users can view journal entries by month. In the Garden View, users can grow flowers by
+            filling out journal entries. The garden was implemented using Skia Canvas and React Native Reanimated. The
+            profile page contains user info and unlocked flowers.
         </p>
-
+        <video class="video-thumb" src="../assets/videos/rosegarden-calendargarden.mp4" preload="metadata" playsinline
+            muted autoplay loop controls></video>
     </section>
 
-    <!-- Features Section -->
-    <!-- <section class="content-section">
-        <h2>Key Features</h2>
-
-        <div class="feature-grid">
-            <div class="feature-card">
-                <h3>Infinite Canvas</h3>
-                <p>Built on Excalidraw's canvas, providing unlimited space for organizing visual references, sketches,
-                    and notes
-                    in a freeform, spatial layout that matches creative thinking.</p>
-            </div>
-
-            <div class="feature-card">
-                <h3>Quick Capture</h3>
-                <p>Drag and drop images, paste URLs, or quickly add text notes without leaving your canvas. Reduces
-                    friction in
-                    the inspiration-gathering process.</p>
-            </div>
-
-            <div class="feature-card">
-                <h3>Visual Clustering</h3>
-                <p>Group related ideas and references together visually. Create mood boards, organize by theme, or map
-                    out
-                    conceptual relationships spatially.</p>
-            </div>
-
-            <div class="feature-card">
-                <h3>Seamless Integration</h3>
-                <p>Export your canvas or portions of it to other tools. Works alongside your existing workflow rather
-                    than
-                    replacing it.</p>
-            </div>
-        </div>
-
-        <div class="image-placeholder">Demo: Key features in action</div>
-    </section> -->
-
-
     <!-- Dev Process -->
-    <section class="content-section">
+    <!-- <section class="content-section">
         <h2>Development Process</h2>
         <p>The design evolved through multiple iterations based on user feedback. Early versions focused heavily on
             automation, but we discovered users wanted more control over their organizational system.</p>
@@ -204,24 +169,7 @@
                 <div class="image-placeholder">Final design mockups</div>
             </div>
         </div>
-    </section>
-
-    <!-- Technical Implementation
-    <section class="content-section highlight">
-        <h2>Technical Implementation</h2>
-        <p>Built with React and TypeScript, leveraging Excalidraw's open-source canvas library as the foundation. Key
-            technical challenges included optimizing performance with large numbers of images and implementing real-time
-            collaboration features.</p>
-
-        <h3>Tech stack</h3>
     </section> -->
-
- 
-
-
-
-
-
 </body>
 
 
