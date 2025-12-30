@@ -75,12 +75,17 @@ h2 {
 
 h3 {
   font-family: 'InstrumentSerif', serif;
-  font-size: 20px;
+  font-size: 26px;
 }
 
 h4 {
   font-family: 'Inconsolata', serif;
   font-size: 15px;
+}
+
+h5 {
+  font-family: 'InstrumentSerif', serif;
+  font-size: 20px;
 }
 
 p {
@@ -216,6 +221,14 @@ li {
 /* prevent visited color change */
 .roles-text:visited {
   color: inherit;
+}
+
+.feature-div {
+  margin-bottom: 80px;
+}
+
+.feature-div img {
+  max-height: 500px;
 }
 
 
