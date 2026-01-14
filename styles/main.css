@@ -732,6 +732,28 @@ li {
   margin-bottom: 2px;
 }
 
+.portfolio-columns {
+  display: flex;
+  justify-content: center; /* centers both columns */
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+}
+
+.portfolio-columns .column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* uniform spacing within column */
+  width: 360px; /* same column width */
+}
+
+.portfolio-columns img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
 /* Responsive */
 @media (max-width: 900px) {
   .header-text {
