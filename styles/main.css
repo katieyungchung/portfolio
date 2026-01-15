@@ -752,6 +752,10 @@ li {
   display: block;
 }
 
+.code-header {
+  display: flex;
+  justify-content: center;
+}
 
 
 /* Responsive */
