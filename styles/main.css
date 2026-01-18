@@ -1,15 +1,22 @@
 :root {
   --primary-green: #BFDF94;
 }
-/* 
-html {
-  cursor: url('../assets/icons/cursor3.png') 16 16, auto;
+
+/* html {
+  cursor: url('../assets/icons/cursor.svg') 16 16, auto;
 }
 
 a:hover,
 button:hover {
-  cursor: url('../assets/icons/cursor3.png') 16 16, pointer;
+  cursor: url('../assets/icons/cursor.svg') 16 16, pointer;
 } */
+
+html,
+a,
+button {
+  cursor: url('../assets/icons/cursor.svg') 10 10, auto;
+}
+
 
 @font-face {
   font-family: 'DiaType';
