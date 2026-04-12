@@ -43,29 +43,32 @@
         </div> -->
     </section>
 
-    <section class="portfolio-columns">
+    <section class="portfolio-columns illustration-gallery">
         <div class="column">
-            <img src="assets/images/illustration/bart.png" alt="">
-            <img src="assets/images/illustration/new_year.png" alt="">
-            <img src="assets/images/illustration/id.png" alt="">
-            <img src="assets/images/illustration/hachi2.png" alt="">
-            <img src="assets/images/illustration/usagi.png" alt="">
+            <img src="assets/images/illustration/bart.png" alt="BART illustration"
+                data-desc="For BART's Let's Glow Anime Festival 2025">
+            <img src="assets/images/illustration/new_year.png" alt="Chinese New Year">
+            <img src="assets/images/illustration/id.png" alt="ID illustration">
+            <img src="assets/images/illustration/hachi2.png" alt="Hachi illustration">
+            <img src="assets/images/illustration/usagi.png" alt="Usagi illustration">
+            <img src="assets/images/illustration/alysa-liu.PNG" alt="Alysa Liu illustration">
         </div>
 
         <div class="column">
-            <img src="assets/images/illustration/turtle_bread.png" alt="">
-            <img src="assets/images/illustration/qwerhacks3.png" alt="">
-            <img src="assets/images/illustration/hachiware.png" alt="">
-            <img src="assets/images/illustration/momonga.png" alt="">
-            <img src="assets/images/illustration/sumo-yoga-tatami.png" alt="">
+            <img src="assets/images/illustration/turtle_bread.png" alt="Turtle bread illustration">
+            <img src="assets/images/illustration/qwerhacks3.png" alt="QWER Hacks illustration"
+                data-desc="Stickers for QWER Hacks">
+            <img src="assets/images/illustration/hachiware.png" alt="Hachiware illustration">
+            <img src="assets/images/illustration/momonga.png" alt="Momonga illustration">
+            <img src="assets/images/illustration/chicha.jpg" alt="Chicha illustration">
+            <img src="assets/images/illustration/tale-of-the-princess-kaguya.PNG"
+                alt="The Tale of the Princess Kaguya illustration">
         </div>
     </section>
 
+    <div id="illustration-hover-pill" class="illustration-hover-pill" role="tooltip" aria-hidden="true"></div>
 
-</body>
-
-
-<footer class="footer">
+    <footer class="footer">
     <div class="footer-left">
         <img src="assets/icons/zhong.png">
         <h4>Made with ♡ by Katie Chung</h4>
@@ -95,5 +98,37 @@
         </a>
     </div>
 </footer>
+
+    <script>
+        (function () {
+            var gallery = document.querySelector('.illustration-gallery');
+            var pill = document.getElementById('illustration-hover-pill');
+            if (!gallery || !pill) return;
+
+            var offsetX = 18;
+            var offsetY = 18;
+
+            function place(e) {
+                pill.style.left = e.clientX + offsetX + 'px';
+                pill.style.top = e.clientY + offsetY + 'px';
+            }
+
+            gallery.querySelectorAll('img[data-desc]').forEach(function (img) {
+                img.addEventListener('mouseenter', function (e) {
+                    pill.textContent = img.getAttribute('data-desc') || '';
+                    pill.classList.add('is-visible');
+                    pill.setAttribute('aria-hidden', 'false');
+                    place(e);
+                });
+                img.addEventListener('mousemove', place);
+                img.addEventListener('mouseleave', function () {
+                    pill.classList.remove('is-visible');
+                    pill.setAttribute('aria-hidden', 'true');
+                    pill.textContent = '';
+                });
+            });
+        })();
+    </script>
+</body>
 
 </html>
