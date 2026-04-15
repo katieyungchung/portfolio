@@ -853,7 +853,7 @@ li {
 
 .research-section-label {
   font-family: 'Inconsolata', serif;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 400;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -901,8 +901,8 @@ li {
 
 .card-venue {
   font-family: 'Inconsolata', serif;
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 800;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #7FB069;
