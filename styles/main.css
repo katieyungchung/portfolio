@@ -1001,3 +1001,39 @@ li {
     font-size: 32px;
   }
 }
+
+.link-pill.unavailable {
+  cursor: default;
+  position: relative;
+  pointer-events: auto;
+}
+
+.link-pill.unavailable::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 7px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f4f4f4;
+  color: #555;
+  font-family: 'Inconsolata', serif;
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  border: 1px solid #d0d0d0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.link-pill.unavailable:hover {
+  background: #BFDF94;
+  border-color: #BFDF94;
+  color: #2a4a10;
+}
+
+.link-pill.unavailable:hover::after {
+  opacity: 1;
+}
